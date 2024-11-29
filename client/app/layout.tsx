@@ -22,11 +22,11 @@ export default function RootLayout({
         <SidebarProvider>
           <div className="flex h-screen">
             <AppSidebar />
-            <SidebarInset className="flex-1">
+            <SidebarInset className="flex-1 overflow-auto">
               <header className="flex h-16 items-center gap-4 border-b bg-background px-6">
                 <SidebarTrigger />
               </header>
-              <main className="flex-1 overflow-auto p-6">
+              <main className="flex-1">
                 {children}
               </main>
             </SidebarInset>
