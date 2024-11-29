@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Cloud, LayoutDashboard, Server, Settings } from 'lucide-react'
+import { Cloud, LayoutDashboard, Server, Settings, Users, FileText, CreditCard, ChartBarIcon } from 'lucide-react'
 import {
   Sidebar,
   SidebarContent,
@@ -17,6 +17,10 @@ import {
 const menuItems = [
   { icon: LayoutDashboard, label: 'Dashboard', href: '/' },
   { icon: Server, label: 'Instances', href: '/instances' },
+  { icon: Users, label: 'Users', href: '/users' },
+  { icon: FileText, label: 'Audit Log', href: '/audit-log' },
+  { icon: CreditCard, label: 'Billing', href: '/billing' },
+  { icon: ChartBarIcon, label: 'Analytics', href: '/analytics' },
   { icon: Settings, label: 'Settings', href: '/settings' },
 ]
 
