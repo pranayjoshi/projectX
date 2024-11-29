@@ -7,8 +7,8 @@ import { SidebarProvider, SidebarTrigger, SidebarInset } from "@/components/ui/s
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'AWS EC2 Manager',
-  description: 'Manage your AWS EC2 instances',
+  title: 'AWS Manager',
+  description: 'Manage your AWS instances',
 }
 
 export default function RootLayout({

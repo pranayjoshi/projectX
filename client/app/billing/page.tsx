@@ -1,6 +1,6 @@
 "use client"
 
-import { Search, AlertCircle } from 'lucide-react'
+import { Search, AlertCircle, CircleDollarSign, DollarSignIcon, FolderKanban } from 'lucide-react'
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Input } from "@/components/ui/input"
 import {
@@ -54,10 +54,31 @@ const billingData = [
   }
 ]
 
+const billingStats = [
+    {
+      title: "Your Annual Total Cost",
+      value: "$",
+      icon: CircleDollarSign,
+    },
+    {
+      title: "Most Expensive Project",
+      value: "21321494240412",
+      icon: FolderKanban,
+    },
+    {
+      title: "Last Month's Total Cost",
+      value: "XXXXX",
+      icon: DollarSignIcon,
+    },
+  ]
+
 export default function BillingPage() {
   return (
     <div className="p-6 space-y-6">
-      <StatsCards />
+      <StatsCards stats={billingStats} />
+      <div className="flex justify-between items-center mb-6">
+        <h1 className="text-2xl font-bold">Billing</h1>
+      </div>
 
       <Alert>
         <AlertCircle className="h-4 w-4" />

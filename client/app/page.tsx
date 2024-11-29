@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { ProjectResources } from "@/components/project_resources" 
+import { StatsCards } from '@/components/stats_cards'
 
 export default function Dashboard() {
   const projects = [
@@ -32,6 +33,10 @@ export default function Dashboard() {
 
   return (
     <div className="p-6">
+      <StatsCards />
+      <div className="flex justify-between items-center my-6">
+        <h1 className="text-2xl font-bold">Projects</h1>
+      </div>
       <div className="flex items-center justify-between mb-8">
         <div className="relative w-[300px]">
           <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />

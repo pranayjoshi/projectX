@@ -11,29 +11,19 @@ import {
 
 const stats = [
   {
-    title: "Your Annual Instance Cost",
-    value: "$",
-    icon: CircleDollarSign,
-  },
-  {
-    title: "Projects",
-    value: "23",
+    title: "Projects Updated Today",
+    value: "2",
     icon: FolderKanban,
   },
   {
-    title: "Resources",
+    title: "Number of Users Logged Today",
     value: "17",
-    icon: Server,
-  },
-  {
-    title: "Users",
-    value: "22",
     icon: Users,
   },
   {
-    title: "Algorithms",
-    value: "43",
-    icon: Binary,
+    title: "Users with Most Number of Operations",
+    value: "jane.smith",
+    icon: Server,
   },
 ]
 

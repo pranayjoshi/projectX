@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from 'react'
-import { Search, Pencil } from 'lucide-react'
+import { Search, Pencil, CircleDollarSign, Users, PersonStandingIcon, Folder, FolderKanban } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -46,12 +46,29 @@ const projects = [
   }
 ]
 
+const usersStats = [
+    {
+      title: "Total Cost by all Users",
+      value: "$",
+      icon: CircleDollarSign,
+    },
+    {
+      title: "User With Highest Purse",
+      value: "aas_admin",
+      icon: PersonStandingIcon,
+    },
+    {
+        title: "User With Most Projects",
+        value: "a_dummy_user",
+        icon: FolderKanban,
+    }
+  ]
 export default function UsersPage() {
   const [activeTab, setActiveTab] = useState("users")
 
   return (
     <div className="p-6 space-y-6">
-      <StatsCards />
+      <StatsCards stats={usersStats}/>
 
       <div className="space-y-4">
         <div className="flex justify-between items-center">
