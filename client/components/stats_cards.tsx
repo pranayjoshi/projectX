@@ -45,14 +45,14 @@ export function StatsCards({ stats = defaultStats }: StatsCardsProps) {
       {stats.map((stat) => {
         const Icon = stat.icon
         return (
-          <Card key={stat.title}>
-            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
+          <Card key={stat.title} className="overflow-hidden">
+            <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-accent/10">
               <CardTitle className="text-sm font-medium">
                 {stat.title}
               </CardTitle>
-              <Icon className="h-4 w-4 text-muted-foreground ml-2" />
+              <Icon className="h-4 w-4 text-accent" />
             </CardHeader>
-            <CardContent>
+            <CardContent className="pt-4">
               <div className="text-2xl font-bold">{stat.value}</div>
             </CardContent>
           </Card>

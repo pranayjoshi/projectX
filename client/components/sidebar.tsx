@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Cloud, LayoutDashboard, Server, Settings, Users, FileText, CreditCard, ChartBarIcon } from 'lucide-react'
+import { Cloud, LayoutDashboard, Server, Settings, Users, FileText, CreditCard } from 'lucide-react'
 import {
   Sidebar,
   SidebarContent,
@@ -20,7 +20,6 @@ const menuItems = [
   { icon: Users, label: 'Users', href: '/users' },
   { icon: FileText, label: 'Audit Log', href: '/audit-log' },
   { icon: CreditCard, label: 'Billing', href: '/billing' },
-  { icon: ChartBarIcon, label: 'Analytics', href: '/analytics' },
   { icon: Settings, label: 'Settings', href: '/settings' },
 ]
 
@@ -28,7 +27,7 @@ export function AppSidebar() {
   const pathname = usePathname()
 
   return (
-    <Sidebar>
+    <Sidebar className="bg-sidebar text-sidebar-foreground">
       <SidebarHeader>
         <SidebarMenu>
           <SidebarMenuItem>
@@ -45,7 +44,11 @@ export function AppSidebar() {
         <SidebarMenu>
           {menuItems.map((item) => (
             <SidebarMenuItem key={item.href}>
-              <SidebarMenuButton asChild isActive={pathname === item.href}>
+              <SidebarMenuButton
+                asChild
+                isActive={pathname === item.href}
+                className="hover:bg-accent hover:text-accent-foreground"
+              >
                 <Link href={item.href}>
                   <item.icon className="mr-2 h-4 w-4" />
                   {item.label}
