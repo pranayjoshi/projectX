@@ -1,8 +1,5 @@
 "use client"
 
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { Cloud, LayoutDashboard, Server, Settings, Users, FileText, CreditCard } from 'lucide-react'
 import {
   Sidebar,
   SidebarContent,
@@ -10,9 +7,11 @@ import {
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
-  SidebarMenuItem,
-  SidebarTrigger,
+  SidebarMenuItem
 } from "@/components/ui/sidebar"
+import { Cloud, CreditCard, FileText, LayoutDashboard, Server, Settings, Users } from 'lucide-react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 const menuItems = [
   { icon: LayoutDashboard, label: 'Dashboard', href: '/' },

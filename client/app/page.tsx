@@ -1,11 +1,11 @@
-import Link from 'next/link'
-import { Search, Pause, Trash2, StopCircle } from 'lucide-react'
+import { ProjectResources } from "@/components/project_resources"
+import { StatsCards } from '@/components/stats_cards'
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
-import { ProjectResources } from "@/components/project_resources" 
-import { StatsCards } from '@/components/stats_cards'
+import { Pause, Search, StopCircle, Trash2 } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Dashboard() {
   const projects = [

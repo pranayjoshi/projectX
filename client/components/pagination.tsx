@@ -1,10 +1,10 @@
+import { Button } from "@/components/ui/button"
 import {
-    ChevronLeft,
-    ChevronRight,
-    ChevronsLeft,
-    ChevronsRight,
-  } from "lucide-react"
-  import { Button } from "@/components/ui/button"
+  ChevronLeft,
+  ChevronRight,
+  ChevronsLeft,
+  ChevronsRight,
+} from "lucide-react"
   
   interface PaginationProps extends React.HTMLAttributes<HTMLDivElement> {
     totalItems: number

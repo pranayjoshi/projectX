@@ -1,5 +1,5 @@
-import { CircleDollarSign, FolderKanban, Server, Users, Binary } from 'lucide-react'
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Binary, CircleDollarSign, FolderKanban, Server, Users } from 'lucide-react';
 
 type Stat = {
   title: string;
@@ -9,7 +9,7 @@ type Stat = {
 
 const defaultStats: Stat[] = [
   {
-    title: "Your Annual Total Cost",
+    title: "Your Annual̦ Total Cost",
     value: "$",
     icon: CircleDollarSign,
   },

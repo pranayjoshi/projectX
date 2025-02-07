@@ -1,6 +1,7 @@
 "use client"
 
-import { Search, AlertCircle, CircleDollarSign, DollarSignIcon, FolderKanban } from 'lucide-react'
+import { Pagination } from "@/components/pagination"
+import { StatsCards } from "@/components/stats_cards"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Input } from "@/components/ui/input"
 import {
@@ -18,8 +19,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { StatsCards } from "@/components/stats_cards"
-import { Pagination } from "@/components/pagination"
+import { AlertCircle, CircleDollarSign, DollarSignIcon, FolderKanban, Search } from 'lucide-react'
 
 const billingData = [
   {

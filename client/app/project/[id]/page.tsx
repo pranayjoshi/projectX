@@ -1,10 +1,10 @@
-import { Pencil, Trash2, Download, ExternalLink } from 'lucide-react'
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ResourcesTable } from "./resources_table"
+import { Download, ExternalLink, Pencil, Trash2 } from 'lucide-react'
 import { Breadcrumb } from "./breadcrumb"
+import { ResourcesTable } from "./resources_table"
 
 export default function ProjectPage() {
   const projectInfo = {

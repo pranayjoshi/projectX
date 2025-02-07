@@ -1,4 +1,5 @@
-import { CircleDollarSign, Folder, FolderKanban, Search, Server, Users } from 'lucide-react'
+import { Pagination } from "@/components/pagination"
+import { StatsCards } from "@/components/stats_cards"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -9,9 +10,8 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { StatsCards } from "@/components/stats_cards"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Pagination } from "@/components/pagination"
+import { CircleDollarSign, FolderKanban, Search, Server, Users } from 'lucide-react'
 const instaceStats = [
     {
       title: "Your Annual Instance Cost",

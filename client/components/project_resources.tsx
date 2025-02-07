@@ -1,6 +1,5 @@
 "use client"
 
-import { Eye, AlertTriangle, Trash2, Pause, StopCircle } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import {
@@ -9,6 +8,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { Pause, StopCircle, Trash2 } from 'lucide-react'
 
 interface Resource {
   name: string

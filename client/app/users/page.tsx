@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from 'react'
-import { Search, Pencil, CircleDollarSign, Users, PersonStandingIcon, Folder, FolderKanban } from 'lucide-react'
+import { Pagination } from "@/components/pagination"
+import { StatsCards } from "@/components/stats_cards"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import {
@@ -13,8 +13,8 @@ import {
   TableRow,
 } from "@/components/ui/table"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { StatsCards } from "@/components/stats_cards"
-import { Pagination } from "@/components/pagination"
+import { CircleDollarSign, FolderKanban, Pencil, PersonStandingIcon, Search } from 'lucide-react'
+import { useState } from 'react'
 
 const users = [
   {

@@ -1,4 +1,3 @@
-import { CircleDollarSign, FolderKanban, Server, Users, Binary } from 'lucide-react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import {
   Table,
@@ -8,6 +7,7 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
+import { FolderKanban, Server, Users } from 'lucide-react'
 
 const stats = [
   {
